@@ -213,7 +213,8 @@ body{
 }
 .home-section{
   position: relative;
-  background: #E4E9F7;
+  background: linear-gradient(286.98deg, rgba(98, 233, 252, 0.82) -28.39%, rgba(239, 23, 205, 0.79) 110.22%);
+  background-size: contain;
   height: 100vh;
   left: 260px;
   width: calc(100% - 260px);
@@ -229,6 +230,15 @@ body{
   align-items: center;
   flex-wrap: wrap;
 }
+.home-button{
+  padding-left: 1150px;
+  justify-content: space-between;
+  position: fixed; 
+  height: 0;
+  top: 2%; 
+  left: 10%; 
+  width: 100%; 
+}
 .home-section .home-content .bx-menu,
 .home-section .home-content .text{
   color: #11101d;
@@ -242,7 +252,46 @@ body{
   font-size: 26px;
   font-weight: 600;
 }
+button{
+  border: none;
+  background: #111111;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+button:hover{
+  cursor: pointer;
+}
+/* About HELIOS */
+.about-helios h2{
+  position: absolute;
+  width: 430px;
+  height: 68px;
+  left: 750px;
+  top: 260px;
+  font-size: 32px;
+  position: fixed; 
 
+}
+.about-helios p{
+  position: absolute;
+  width: 612px;
+  height: 90px;
+  left: 750px;
+  top: 310px;
+  font-size: 20px;
+  display: flex;
+  position: fixed; 
+}
+.about-helios img{
+  position: fixed;
+  width: 410px;
+  height: 378px;
+  left: 300px;
+  top: 230px;
+}
 @media screen and (max-width: 400px){
   .sidebar{
     width: 240px;
